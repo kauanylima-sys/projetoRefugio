@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="26.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="formCadastroAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formCadastroAnimal.Designer.cs">
+      <DependentUpon>formCadastroAnimal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="formCadastroAnimal.resx">
+      <DependentUpon>formCadastroAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="formConsultarAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formConsultarAnimal.Designer.cs">
+      <DependentUpon>formConsultarAnimal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="formConsultarAnimal.resx">
+      <DependentUpon>formConsultarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="formAtualizarAnimal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formAtualizarAnimal.Designer.cs">
+      <DependentUpon>formAtualizarAnimal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="formAtualizarAnimal.resx">
+      <DependentUpon>formAtualizarAnimal.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="formListarAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formListarAnimais.Designer.cs">
+      <DependentUpon>formListarAnimais.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="formListarAnimais.resx">
+      <DependentUpon>formListarAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Update="formPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="formPrincipal.Designer.cs">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Update="formPrincipal.resx">
+      <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

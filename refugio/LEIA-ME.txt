@@ -1,0 +1,31 @@
+REFÚGIO — projeto corrigido
+==========================
+
+Abra refugio.slnx no Visual Studio 2026 (ou abra refugio.csproj).
+
+Formulários:
+- formPrincipal: 4 botões funcionais
+- formCadastroAnimal: cadastro via sp_insereAnimal
+- formConsultarAnimal: consulta por ID
+- formAtualizarAnimal: busca por ID e atualização
+- formListarAnimais: tabela com filtro por nome ou espécie
+
+O banco MySQL não é criado automaticamente. São esperadas as estruturas
+que você já montou no Workbench:
+  banco_refugio
+  categorias_animais(id, categoria)
+  animais_resgatados(id, nome, id_categoria, especie, sexo,
+                     idade, situacao, local_resgate, data_resgate)
+  procedure sp_insereAnimal(p_nome, p_id_categoria, p_especie, p_sexo,
+       p_idade, p_situacao, p_local_resgate, p_data_resgate)
+
+Verifique a public string connectionString no arquivo ConectaBanco.cs,
+conforme os dados da sua conexão local. Não suba senhas reais ao GitHub.
+
+NOTA SOBRE TESTES: os arquivos passaram em verificações estruturais e de
+integridade do pacote, mas não foi possível executar MSBuild/Windows Forms
+ou conectar ao seu MySQL neste ambiente Linux. Confirme Compilar Solução
+no Visual Studio e depois execute os botões contra o seu banco.
+
+O ZIP original incluía outro projeto completo dentro da subpasta refugio/refugio,
+com um Designer truncado; essa duplicação foi removida.
