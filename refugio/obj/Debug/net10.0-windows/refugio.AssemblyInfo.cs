@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("refugio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+caccc292a44e94a44c223598d3aebb551e41d2c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("refugio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("refugio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

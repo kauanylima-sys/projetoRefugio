@@ -102,5 +102,10 @@ namespace refugio
         {
             this.Close();
         }
+
+        private void formConsultarAnimal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

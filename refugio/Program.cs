@@ -9,7 +9,7 @@ namespace refugio
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new formPrincipal());
+            Application.Run(new FormLogin());
         }
     }
 }

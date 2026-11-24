@@ -15,12 +15,13 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formAtualizarAnimal));
             pnlCabecalho = new Panel();
-            lblTitulo = new Label();
-            lblSubtitulo = new Label();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label3 = new Label();
             lblPagina = new Label();
             lblInstrucao = new Label();
-            lblRodape = new Label();
             lblIdBusca = new Label();
             numIdBusca = new NumericUpDown();
             btnBuscar = new Button();
@@ -43,7 +44,9 @@
             dtpDataResgate = new DateTimePicker();
             btnCancelar = new Button();
             btnSalvar = new Button();
+            label1 = new Label();
             pnlCabecalho.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numIdBusca).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numIdade).BeginInit();
             SuspendLayout();
@@ -51,42 +54,53 @@
             // pnlCabecalho
             // 
             pnlCabecalho.BackColor = Color.DarkSeaGreen;
-            pnlCabecalho.Controls.Add(lblTitulo);
-            pnlCabecalho.Controls.Add(lblSubtitulo);
+            pnlCabecalho.Controls.Add(pictureBox2);
+            pnlCabecalho.Controls.Add(label2);
+            pnlCabecalho.Controls.Add(label3);
             pnlCabecalho.Dock = DockStyle.Top;
             pnlCabecalho.Location = new Point(0, 0);
             pnlCabecalho.Name = "pnlCabecalho";
             pnlCabecalho.Size = new Size(982, 132);
             pnlCabecalho.TabIndex = 0;
             // 
-            // lblTitulo
+            // pictureBox2
             // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
-            lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(160, 30);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(168, 38);
-            lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "REFÚGIO";
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(82, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 132);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 5;
+            pictureBox2.TabStop = false;
             // 
-            // lblSubtitulo
+            // label2
             // 
-            lblSubtitulo.AutoSize = true;
-            lblSubtitulo.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
-            lblSubtitulo.ForeColor = Color.White;
-            lblSubtitulo.Location = new Point(160, 78);
-            lblSubtitulo.Name = "lblSubtitulo";
-            lblSubtitulo.Size = new Size(447, 23);
-            lblSubtitulo.TabIndex = 1;
-            lblSubtitulo.Text = "Sistema de Gerenciamento de Animais Resgatados";
+            label2.AutoSize = true;
+            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(208, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 38);
+            label2.TabIndex = 3;
+            label2.Text = "REFÚGIO";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(208, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 23);
+            label3.TabIndex = 4;
+            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
             // 
             // lblPagina
             // 
             lblPagina.AutoSize = true;
             lblPagina.Font = new Font("Arial", 16F);
             lblPagina.ForeColor = Color.DarkSeaGreen;
-            lblPagina.Location = new Point(82, 160);
+            lblPagina.Location = new Point(101, 160);
             lblPagina.Name = "lblPagina";
             lblPagina.Size = new Size(206, 32);
             lblPagina.TabIndex = 1;
@@ -97,29 +111,18 @@
             lblInstrucao.AutoSize = true;
             lblInstrucao.Font = new Font("Arial", 12F);
             lblInstrucao.ForeColor = Color.DarkSeaGreen;
-            lblInstrucao.Location = new Point(82, 200);
+            lblInstrucao.Location = new Point(101, 200);
             lblInstrucao.Name = "lblInstrucao";
             lblInstrucao.Size = new Size(497, 23);
             lblInstrucao.TabIndex = 2;
             lblInstrucao.Text = "Busque um cadastro pelo ID antes de alterar os dados:";
-            // 
-            // lblRodape
-            // 
-            lblRodape.AutoSize = true;
-            lblRodape.Font = new Font("Segoe UI", 9F);
-            lblRodape.ForeColor = Color.Gray;
-            lblRodape.Location = new Point(377, 791);
-            lblRodape.Name = "lblRodape";
-            lblRodape.Size = new Size(202, 20);
-            lblRodape.TabIndex = 90;
-            lblRodape.Text = "Refúgio • Projeto Acadêmico";
             // 
             // lblIdBusca
             // 
             lblIdBusca.AutoSize = true;
             lblIdBusca.Font = new Font("Arial", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblIdBusca.ForeColor = Color.DarkSeaGreen;
-            lblIdBusca.Location = new Point(81, 268);
+            lblIdBusca.Location = new Point(101, 264);
             lblIdBusca.Name = "lblIdBusca";
             lblIdBusca.Size = new Size(125, 21);
             lblIdBusca.TabIndex = 35;
@@ -130,12 +133,12 @@
             numIdBusca.BackColor = Color.White;
             numIdBusca.BorderStyle = BorderStyle.None;
             numIdBusca.Font = new Font("Arial", 13F);
-            numIdBusca.Location = new Point(81, 296);
-            numIdBusca.Maximum = new decimal(new int[] { 2147483647, 0, 0, 0 });
-            numIdBusca.ValueChanged += numIdBusca_ValueChanged;
+            numIdBusca.Location = new Point(101, 293);
+            numIdBusca.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             numIdBusca.Name = "numIdBusca";
-            numIdBusca.Size = new Size(200, 28);
+            numIdBusca.Size = new Size(129, 28);
             numIdBusca.TabIndex = 7;
+            numIdBusca.ValueChanged += numIdBusca_ValueChanged;
             // 
             // btnBuscar
             // 
@@ -146,9 +149,9 @@
             btnBuscar.FlatStyle = FlatStyle.Flat;
             btnBuscar.Font = new Font("Arial", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnBuscar.ForeColor = Color.White;
-            btnBuscar.Location = new Point(296, 294);
+            btnBuscar.Location = new Point(247, 293);
             btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new Size(135, 30);
+            btnBuscar.Size = new Size(129, 30);
             btnBuscar.TabIndex = 8;
             btnBuscar.Text = "Buscar";
             btnBuscar.UseVisualStyleBackColor = false;
@@ -159,7 +162,7 @@
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblNome.ForeColor = Color.DarkSeaGreen;
-            lblNome.Location = new Point(84, 351);
+            lblNome.Location = new Point(91, 362);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(59, 23);
             lblNome.TabIndex = 34;
@@ -169,9 +172,10 @@
             // 
             txtNome.BackColor = Color.White;
             txtNome.BorderStyle = BorderStyle.None;
+            txtNome.Cursor = Cursors.IBeam;
             txtNome.Font = new Font("Arial", 12F);
             txtNome.ForeColor = Color.Black;
-            txtNome.Location = new Point(84, 378);
+            txtNome.Location = new Point(91, 389);
             txtNome.MaxLength = 50;
             txtNome.Multiline = true;
             txtNome.Name = "txtNome";
@@ -183,7 +187,7 @@
             lblCategoria.AutoSize = true;
             lblCategoria.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblCategoria.ForeColor = Color.DarkSeaGreen;
-            lblCategoria.Location = new Point(84, 434);
+            lblCategoria.Location = new Point(91, 445);
             lblCategoria.Name = "lblCategoria";
             lblCategoria.Size = new Size(88, 23);
             lblCategoria.TabIndex = 33;
@@ -196,7 +200,7 @@
             cmbCategoria.FlatStyle = FlatStyle.Flat;
             cmbCategoria.Font = new Font("Arial", 12F);
             cmbCategoria.FormattingEnabled = true;
-            cmbCategoria.Location = new Point(84, 461);
+            cmbCategoria.Location = new Point(91, 472);
             cmbCategoria.Name = "cmbCategoria";
             cmbCategoria.Size = new Size(350, 31);
             cmbCategoria.TabIndex = 12;
@@ -206,7 +210,7 @@
             lblEspecie.AutoSize = true;
             lblEspecie.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblEspecie.ForeColor = Color.DarkSeaGreen;
-            lblEspecie.Location = new Point(84, 517);
+            lblEspecie.Location = new Point(91, 528);
             lblEspecie.Name = "lblEspecie";
             lblEspecie.Size = new Size(75, 23);
             lblEspecie.TabIndex = 32;
@@ -216,9 +220,10 @@
             // 
             txtEspecie.BackColor = Color.White;
             txtEspecie.BorderStyle = BorderStyle.None;
+            txtEspecie.Cursor = Cursors.IBeam;
             txtEspecie.Font = new Font("Arial", 12F);
             txtEspecie.ForeColor = Color.Black;
-            txtEspecie.Location = new Point(84, 544);
+            txtEspecie.Location = new Point(91, 555);
             txtEspecie.MaxLength = 100;
             txtEspecie.Multiline = true;
             txtEspecie.Name = "txtEspecie";
@@ -230,7 +235,7 @@
             lblSexo.AutoSize = true;
             lblSexo.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblSexo.ForeColor = Color.DarkSeaGreen;
-            lblSexo.Location = new Point(84, 600);
+            lblSexo.Location = new Point(91, 611);
             lblSexo.Name = "lblSexo";
             lblSexo.Size = new Size(53, 23);
             lblSexo.TabIndex = 31;
@@ -243,7 +248,7 @@
             cmbSexo.FlatStyle = FlatStyle.Flat;
             cmbSexo.Font = new Font("Arial", 12F);
             cmbSexo.FormattingEnabled = true;
-            cmbSexo.Location = new Point(84, 627);
+            cmbSexo.Location = new Point(91, 638);
             cmbSexo.Name = "cmbSexo";
             cmbSexo.Size = new Size(350, 31);
             cmbSexo.TabIndex = 16;
@@ -253,7 +258,7 @@
             lblIdade.AutoSize = true;
             lblIdade.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblIdade.ForeColor = Color.DarkSeaGreen;
-            lblIdade.Location = new Point(541, 351);
+            lblIdade.Location = new Point(548, 362);
             lblIdade.Name = "lblIdade";
             lblIdade.Size = new Size(130, 23);
             lblIdade.TabIndex = 30;
@@ -264,33 +269,35 @@
             numIdade.BackColor = Color.White;
             numIdade.BorderStyle = BorderStyle.None;
             numIdade.Font = new Font("Arial", 12F);
-            numIdade.Location = new Point(541, 378);
+            numIdade.Location = new Point(548, 389);
             numIdade.Maximum = new decimal(new int[] { 150, 0, 0, 0 });
             numIdade.Name = "numIdade";
             numIdade.Size = new Size(350, 26);
             numIdade.TabIndex = 18;
-            // 
-            // lblSituacao
-            // 
-            lblSituacao.AutoSize = true;
-            lblSituacao.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
-            lblSituacao.ForeColor = Color.DarkSeaGreen;
-            lblSituacao.Location = new Point(541, 434);
-            lblSituacao.Name = "lblSituacao";
-            lblSituacao.Size = new Size(81, 23);
-            lblSituacao.TabIndex = 29;
-            lblSituacao.Text = "Situação:";
             // 
             // chkIdadeNaoInformada
             // 
             chkIdadeNaoInformada.AutoSize = true;
             chkIdadeNaoInformada.Font = new Font("Arial", 9F);
             chkIdadeNaoInformada.ForeColor = Color.DarkSeaGreen;
-            chkIdadeNaoInformada.Location = new Point(541, 408);
+            chkIdadeNaoInformada.Location = new Point(548, 419);
             chkIdadeNaoInformada.Name = "chkIdadeNaoInformada";
+            chkIdadeNaoInformada.Size = new Size(162, 21);
+            chkIdadeNaoInformada.TabIndex = 30;
             chkIdadeNaoInformada.Text = "Idade não informada";
             chkIdadeNaoInformada.Visible = false;
             chkIdadeNaoInformada.CheckedChanged += chkIdadeNaoInformada_CheckedChanged;
+            // 
+            // lblSituacao
+            // 
+            lblSituacao.AutoSize = true;
+            lblSituacao.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            lblSituacao.ForeColor = Color.DarkSeaGreen;
+            lblSituacao.Location = new Point(548, 445);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(81, 23);
+            lblSituacao.TabIndex = 29;
+            lblSituacao.Text = "Situação:";
             // 
             // cmbSituacao
             // 
@@ -299,7 +306,7 @@
             cmbSituacao.FlatStyle = FlatStyle.Flat;
             cmbSituacao.Font = new Font("Arial", 12F);
             cmbSituacao.FormattingEnabled = true;
-            cmbSituacao.Location = new Point(541, 461);
+            cmbSituacao.Location = new Point(548, 472);
             cmbSituacao.Name = "cmbSituacao";
             cmbSituacao.Size = new Size(350, 31);
             cmbSituacao.TabIndex = 20;
@@ -309,7 +316,7 @@
             lblLocalResgate.AutoSize = true;
             lblLocalResgate.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblLocalResgate.ForeColor = Color.DarkSeaGreen;
-            lblLocalResgate.Location = new Point(541, 517);
+            lblLocalResgate.Location = new Point(548, 528);
             lblLocalResgate.Name = "lblLocalResgate";
             lblLocalResgate.Size = new Size(142, 23);
             lblLocalResgate.TabIndex = 28;
@@ -319,9 +326,10 @@
             // 
             txtLocalResgate.BackColor = Color.White;
             txtLocalResgate.BorderStyle = BorderStyle.None;
+            txtLocalResgate.Cursor = Cursors.IBeam;
             txtLocalResgate.Font = new Font("Arial", 12F);
             txtLocalResgate.ForeColor = Color.Black;
-            txtLocalResgate.Location = new Point(541, 544);
+            txtLocalResgate.Location = new Point(548, 555);
             txtLocalResgate.MaxLength = 100;
             txtLocalResgate.Multiline = true;
             txtLocalResgate.Name = "txtLocalResgate";
@@ -333,7 +341,7 @@
             lblDataResgate.AutoSize = true;
             lblDataResgate.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblDataResgate.ForeColor = Color.DarkSeaGreen;
-            lblDataResgate.Location = new Point(541, 600);
+            lblDataResgate.Location = new Point(548, 611);
             lblDataResgate.Name = "lblDataResgate";
             lblDataResgate.Size = new Size(134, 23);
             lblDataResgate.TabIndex = 27;
@@ -345,7 +353,7 @@
             dtpDataResgate.CustomFormat = "dd/MM/yyyy HH:mm";
             dtpDataResgate.Font = new Font("Arial", 12F);
             dtpDataResgate.Format = DateTimePickerFormat.Custom;
-            dtpDataResgate.Location = new Point(541, 627);
+            dtpDataResgate.Location = new Point(548, 638);
             dtpDataResgate.Name = "dtpDataResgate";
             dtpDataResgate.ShowUpDown = true;
             dtpDataResgate.Size = new Size(350, 30);
@@ -360,7 +368,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Arial", 11F, FontStyle.Bold);
             btnCancelar.ForeColor = Color.DarkSeaGreen;
-            btnCancelar.Location = new Point(318, 710);
+            btnCancelar.Location = new Point(324, 735);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(165, 40);
             btnCancelar.TabIndex = 25;
@@ -372,19 +380,30 @@
             // 
             btnSalvar.BackColor = Color.DarkSeaGreen;
             btnSalvar.Cursor = Cursors.Hand;
+            btnSalvar.Enabled = false;
             btnSalvar.FlatAppearance.BorderColor = Color.DarkSeaGreen;
             btnSalvar.FlatAppearance.BorderSize = 2;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Arial", 11F, FontStyle.Bold);
             btnSalvar.ForeColor = Color.White;
-            btnSalvar.Location = new Point(498, 710);
+            btnSalvar.Location = new Point(504, 735);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(165, 40);
             btnSalvar.TabIndex = 26;
             btnSalvar.Text = "Salvar alterações";
             btnSalvar.UseVisualStyleBackColor = false;
-            btnSalvar.Enabled = false;
             btnSalvar.Click += btnSalvar_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F);
+            label1.ForeColor = Color.Gray;
+            label1.Location = new Point(388, 804);
+            label1.Name = "label1";
+            label1.Size = new Size(202, 20);
+            label1.TabIndex = 91;
+            label1.Text = "Refúgio • Projeto Acadêmico";
             // 
             // formAtualizarAnimal
             // 
@@ -392,7 +411,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(982, 820);
+            ClientSize = new Size(982, 853);
+            Controls.Add(label1);
             Controls.Add(btnSalvar);
             Controls.Add(btnCancelar);
             Controls.Add(dtpDataResgate);
@@ -415,19 +435,19 @@
             Controls.Add(btnBuscar);
             Controls.Add(numIdBusca);
             Controls.Add(lblIdBusca);
-            Controls.Add(lblRodape);
             Controls.Add(lblInstrucao);
             Controls.Add(lblPagina);
             Controls.Add(pnlCabecalho);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
-            MinimumSize = new Size(1000, 859);
+            MinimumSize = new Size(1000, 900);
             Name = "formAtualizarAnimal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Refúgio - Atualizar Animal";
             Load += formAtualizarAnimal_Load;
             pnlCabecalho.ResumeLayout(false);
             pnlCabecalho.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numIdBusca).EndInit();
             ((System.ComponentModel.ISupportInitialize)numIdade).EndInit();
             ResumeLayout(false);
@@ -437,11 +457,8 @@
         #endregion
 
         private Panel pnlCabecalho;
-        private Label lblTitulo;
-        private Label lblSubtitulo;
         private Label lblPagina;
         private Label lblInstrucao;
-        private Label lblRodape;
         private Label lblIdBusca;
         private NumericUpDown numIdBusca;
         private Button btnBuscar;
@@ -464,5 +481,9 @@
         private DateTimePicker dtpDataResgate;
         private Button btnCancelar;
         private Button btnSalvar;
+        private Label label1;
+        private PictureBox pictureBox2;
+        private Label label2;
+        private Label label3;
     }
 }

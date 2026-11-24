@@ -260,5 +260,52 @@ namespace refugio
                 }
             }
         }
+
+
+        public bool Verifica(string user, string pass)
+        {
+            mensagem = "";
+
+            string senhaHash = Biblioteca.makeHash(pass);
+
+            MySqlCommand comando = new MySqlCommand(
+                "consultaLogin", conexao);
+
+            comando.CommandType = CommandType.StoredProcedure;
+
+            comando.Parameters.AddWithValue("usuario", user);
+            comando.Parameters.AddWithValue("senha", senhaHash);
+
+            try
+            {
+                conexao.Open();
+
+                MySqlDataAdapter adaptador =
+                    new MySqlDataAdapter(comando);
+
+                DataTable tabela = new DataTable();
+
+                adaptador.Fill(tabela);
+
+                if (tabela.Rows.Count > 0)
+                {
+                    return true;
+                }
+            }
+            catch (MySqlException erro)
+            {
+                mensagem = erro.Message;
+            }
+            finally
+            {
+                if (conexao.State == ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+            return false;
+        }
+
     }
 }

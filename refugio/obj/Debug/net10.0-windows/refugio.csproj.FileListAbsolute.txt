@@ -1,5 +1,9 @@
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.csproj.AssemblyReference.cache
+C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formAtualizarAnimal.resources
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formCadastroAnimal.resources
+C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formConsultarAnimal.resources
+C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formListarAnimais.resources
+C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.FormLogin.resources
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formPrincipal.resources
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.Properties.Resources.resources
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.csproj.GenerateResource.cache
@@ -25,9 +29,6 @@ C:\Users\kauan\Documentos\Projetos\refugio\refugio\bin\Debug\net10.0-windows\run
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\bin\Debug\net10.0-windows\runtimes\win-x64\native\k5sprt64.dll
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\bin\Debug\net10.0-windows\runtimes\win-x64\native\krb5_64.dll
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
-C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formAtualizarAnimal.resources
-C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formConsultarAnimal.resources
-C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.formListarAnimais.resources
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.csproj.Up2Date
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refugio.dll
 C:\Users\kauan\Documentos\Projetos\refugio\refugio\obj\Debug\net10.0-windows\refint\refugio.dll

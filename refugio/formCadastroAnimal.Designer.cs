@@ -15,9 +15,8 @@
 
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCadastroAnimal));
             pnlCabecalho = new Panel();
-            lblTitulo = new Label();
-            lblSubtitulo = new Label();
             lblPagina = new Label();
             lblInstrucao = new Label();
             lblRodape = new Label();
@@ -40,42 +39,25 @@
             btnCancelar = new Button();
             btnSalvar = new Button();
             btnAddCategoria = new Button();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label3 = new Label();
             pnlCabecalho.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)numIdade).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pnlCabecalho
             // 
             pnlCabecalho.BackColor = Color.DarkSeaGreen;
-            pnlCabecalho.Controls.Add(lblTitulo);
-            pnlCabecalho.Controls.Add(lblSubtitulo);
+            pnlCabecalho.Controls.Add(pictureBox2);
+            pnlCabecalho.Controls.Add(label2);
+            pnlCabecalho.Controls.Add(label3);
             pnlCabecalho.Dock = DockStyle.Top;
             pnlCabecalho.Location = new Point(0, 0);
             pnlCabecalho.Name = "pnlCabecalho";
             pnlCabecalho.Size = new Size(982, 132);
             pnlCabecalho.TabIndex = 0;
-            // 
-            // lblTitulo
-            // 
-            lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
-            lblTitulo.ForeColor = Color.White;
-            lblTitulo.Location = new Point(160, 30);
-            lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(168, 38);
-            lblTitulo.TabIndex = 0;
-            lblTitulo.Text = "REFÚGIO";
-            // 
-            // lblSubtitulo
-            // 
-            lblSubtitulo.AutoSize = true;
-            lblSubtitulo.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
-            lblSubtitulo.ForeColor = Color.White;
-            lblSubtitulo.Location = new Point(160, 78);
-            lblSubtitulo.Name = "lblSubtitulo";
-            lblSubtitulo.Size = new Size(447, 23);
-            lblSubtitulo.TabIndex = 1;
-            lblSubtitulo.Text = "Sistema de Gerenciamento de Animais Resgatados";
             // 
             // lblPagina
             // 
@@ -332,6 +314,7 @@
             btnSalvar.Text = "Cadastrar animal";
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
+            // 
             // btnAddCategoria
             // 
             btnAddCategoria.BackColor = Color.DarkSeaGreen;
@@ -349,12 +332,44 @@
             btnAddCategoria.UseVisualStyleBackColor = false;
             btnAddCategoria.Click += btnAddCategoria_Click;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(85, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 132);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 93;
+            pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(211, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 38);
+            label2.TabIndex = 91;
+            label2.Text = "REFÚGIO";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(211, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 23);
+            label3.TabIndex = 92;
+            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
+            // 
             // formCadastroAnimal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SeaShell;
-            ClientSize = new Size(982, 755);
+            ClientSize = new Size(982, 753);
             Controls.Add(btnAddCategoria);
             Controls.Add(btnSalvar);
             Controls.Add(btnCancelar);
@@ -388,6 +403,7 @@
             pnlCabecalho.ResumeLayout(false);
             pnlCabecalho.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)numIdade).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -395,8 +411,6 @@
         #endregion
 
         private Panel pnlCabecalho;
-        private Label lblTitulo;
-        private Label lblSubtitulo;
         private Label lblPagina;
         private Label lblInstrucao;
         private Label lblRodape;
@@ -419,5 +433,8 @@
         private Button btnCancelar;
         private Button btnSalvar;
         private Button btnAddCategoria;
+        private PictureBox pictureBox2;
+        private Label label2;
+        private Label label3;
     }
 }
