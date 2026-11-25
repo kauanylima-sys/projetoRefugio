@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KQPfp9s62Lc=",
+  "dgSpecHash": "rJwn4JQoIwI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kauan\\Documentos\\Projetos\\refugio\\refugio\\refugio.csproj",
+  "projectFilePath": "C:\\Users\\kauan\\Documentos\\Projetos\\projetoRefugio\\refugio\\refugio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kauan\\.nuget\\packages\\bouncycastle.cryptography\\2.6.2\\bouncycastle.cryptography.2.6.2.nupkg.sha512",
     "C:\\Users\\kauan\\.nuget\\packages\\google.protobuf\\3.35.0\\google.protobuf.3.35.0.nupkg.sha512",

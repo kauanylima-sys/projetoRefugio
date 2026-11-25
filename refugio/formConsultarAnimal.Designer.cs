@@ -1,4 +1,4 @@
-﻿namespace refugio
+namespace refugio
 {
     partial class formConsultarAnimal
     {
@@ -17,6 +17,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formConsultarAnimal));
             pnlCabecalho = new Panel();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label3 = new Label();
             lblPagina = new Label();
             lblInstrucao = new Label();
             lblRodape = new Label();
@@ -39,12 +42,13 @@
             lblDetalhes = new Label();
             lblNome = new Label();
             txtNome = new TextBox();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
+            lblEspecie = new Label();
+            txtEspecie = new TextBox();
+            lblSituacao = new Label();
+            txtSituacao = new TextBox();
             pnlCabecalho.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvResultados).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvResultados).BeginInit();
             SuspendLayout();
             // 
             // pnlCabecalho
@@ -58,6 +62,38 @@
             pnlCabecalho.Name = "pnlCabecalho";
             pnlCabecalho.Size = new Size(982, 132);
             pnlCabecalho.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(92, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 132);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 93;
+            pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(218, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 38);
+            label2.TabIndex = 91;
+            label2.Text = "REFÚGIO";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(218, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 23);
+            label3.TabIndex = 92;
+            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
             // 
             // lblPagina
             // 
@@ -137,10 +173,10 @@
             lblSexo.AutoSize = true;
             lblSexo.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
             lblSexo.ForeColor = Color.DarkSeaGreen;
-            lblSexo.Location = new Point(82, 616);
+            lblSexo.Location = new Point(82, 676);
             lblSexo.Name = "lblSexo";
             lblSexo.Size = new Size(53, 23);
-            lblSexo.TabIndex = 31;
+            lblSexo.TabIndex = 35;
             lblSexo.Text = "Sexo:";
             // 
             // txtSexo
@@ -241,11 +277,11 @@
             txtDataResgate.BorderStyle = BorderStyle.None;
             txtDataResgate.Font = new Font("Arial", 12F);
             txtDataResgate.ForeColor = Color.Black;
-            txtDataResgate.Location = new Point(539, 700);
+            txtDataResgate.Location = new Point(539, 702);
             txtDataResgate.Name = "txtDataResgate";
             txtDataResgate.ReadOnly = true;
             txtDataResgate.Size = new Size(350, 23);
-            txtDataResgate.TabIndex = 24;
+            txtDataResgate.TabIndex = 17;
             // 
             // btnFechar
             // 
@@ -328,37 +364,51 @@
             txtNome.Size = new Size(350, 23);
             txtNome.TabIndex = 10;
             // 
-            // pictureBox2
+            // lblEspecie
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(92, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(120, 132);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 93;
-            pictureBox2.TabStop = false;
+            lblEspecie.AutoSize = true;
+            lblEspecie.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            lblEspecie.ForeColor = Color.DarkSeaGreen;
+            lblEspecie.Location = new Point(539, 560);
+            lblEspecie.Name = "lblEspecie";
+            lblEspecie.Size = new Size(75, 23);
+            lblEspecie.TabIndex = 32;
+            lblEspecie.Text = "Espécie:";
             // 
-            // label2
+            // txtEspecie
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(218, 30);
-            label2.Name = "label2";
-            label2.Size = new Size(168, 38);
-            label2.TabIndex = 91;
-            label2.Text = "REFÚGIO";
+            txtEspecie.BackColor = Color.White;
+            txtEspecie.BorderStyle = BorderStyle.None;
+            txtEspecie.Font = new Font("Arial", 12F);
+            txtEspecie.ForeColor = Color.Black;
+            txtEspecie.Location = new Point(539, 584);
+            txtEspecie.Name = "txtEspecie";
+            txtEspecie.ReadOnly = true;
+            txtEspecie.Size = new Size(350, 23);
+            txtEspecie.TabIndex = 11;
             // 
-            // label3
+            // lblSituacao
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(218, 78);
-            label3.Name = "label3";
-            label3.Size = new Size(447, 23);
-            label3.TabIndex = 92;
-            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
+            lblSituacao.AutoSize = true;
+            lblSituacao.Font = new Font("Arial Narrow", 11F, FontStyle.Bold);
+            lblSituacao.ForeColor = Color.DarkSeaGreen;
+            lblSituacao.Location = new Point(82, 616);
+            lblSituacao.Name = "lblSituacao";
+            lblSituacao.Size = new Size(81, 23);
+            lblSituacao.TabIndex = 34;
+            lblSituacao.Text = "Situação:";
+            // 
+            // txtSituacao
+            // 
+            txtSituacao.BackColor = Color.White;
+            txtSituacao.BorderStyle = BorderStyle.None;
+            txtSituacao.Font = new Font("Arial", 12F);
+            txtSituacao.ForeColor = Color.Black;
+            txtSituacao.Location = new Point(82, 640);
+            txtSituacao.Name = "txtSituacao";
+            txtSituacao.ReadOnly = true;
+            txtSituacao.Size = new Size(350, 23);
+            txtSituacao.TabIndex = 12;
             // 
             // formConsultarAnimal
             // 
@@ -380,6 +430,10 @@
             Controls.Add(txtCategoria);
             Controls.Add(lblCategoria);
             Controls.Add(txtSexo);
+            Controls.Add(lblSituacao);
+            Controls.Add(txtSituacao);
+            Controls.Add(lblEspecie);
+            Controls.Add(txtEspecie);
             Controls.Add(lblSexo);
             Controls.Add(txtNome);
             Controls.Add(lblNome);
@@ -399,8 +453,8 @@
             Load += formConsultarAnimal_Load;
             pnlCabecalho.ResumeLayout(false);
             pnlCabecalho.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvResultados).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvResultados).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

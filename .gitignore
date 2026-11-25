@@ -1,0 +1,19 @@
+
+# Arquivos temporários do Visual Studio
+.vs/
+
+# Arquivos gerados na compilação
+bin/
+obj/
+
+# Arquivos de usuário
+*.user
+*.suo
+*.userosscache
+
+# Pastas de pacotes restauráveis
+packages/
+
+# Arquivos temporários
+*.tmp
+*.log

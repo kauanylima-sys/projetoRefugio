@@ -299,11 +299,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kauan\\Documentos\\Projetos\\refugio\\refugio\\refugio.csproj",
+      "projectUniqueName": "C:\\Users\\kauan\\Documentos\\Projetos\\projetoRefugio\\refugio\\refugio.csproj",
       "projectName": "refugio",
-      "projectPath": "C:\\Users\\kauan\\Documentos\\Projetos\\refugio\\refugio\\refugio.csproj",
+      "projectPath": "C:\\Users\\kauan\\Documentos\\Projetos\\projetoRefugio\\refugio\\refugio.csproj",
       "packagesPath": "C:\\Users\\kauan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kauan\\Documentos\\Projetos\\refugio\\refugio\\obj\\",
+      "outputPath": "C:\\Users\\kauan\\Documentos\\Projetos\\projetoRefugio\\refugio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kauan\\AppData\\Roaming\\NuGet\\NuGet.Config",
