@@ -214,7 +214,7 @@ namespace refugio
             animal.Idade = Convert.ToInt32(numIdade.Value);
             animal.Situacao = cmbSituacao.SelectedItem.ToString();
             animal.LocalResgate = txtLocalResgate.Text.Trim();
-            animal.DataResgate = dtpDataResgate.Value;
+            animal.DataResgate = dtpDataResgate.Value.Date;
 
             if (localResgateNaoInformado && animal.LocalResgate == "")
             {

@@ -146,7 +146,7 @@ namespace refugio
             animal.Idade = Convert.ToInt32(numIdade.Value);
             animal.Situacao = cmbSituacao.SelectedItem.ToString();
             animal.LocalResgate = txtLocalResgate.Text.Trim();
-            animal.DataResgate = dtpDataResgate.Value;
+            animal.DataResgate = dtpDataResgate.Value.Date;
 
             bool retorno = con.insereAnimal(animal);
             if (retorno == false)
@@ -163,6 +163,11 @@ namespace refugio
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dtpDataResgate_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

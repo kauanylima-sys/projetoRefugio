@@ -17,6 +17,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCadastroAnimal));
             pnlCabecalho = new Panel();
+            pictureBox2 = new PictureBox();
+            label2 = new Label();
+            label3 = new Label();
             lblPagina = new Label();
             lblInstrucao = new Label();
             lblRodape = new Label();
@@ -39,12 +42,9 @@
             btnCancelar = new Button();
             btnSalvar = new Button();
             btnAddCategoria = new Button();
-            pictureBox2 = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
             pnlCabecalho.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)numIdade).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numIdade).BeginInit();
             SuspendLayout();
             // 
             // pnlCabecalho
@@ -58,6 +58,38 @@
             pnlCabecalho.Name = "pnlCabecalho";
             pnlCabecalho.Size = new Size(982, 132);
             pnlCabecalho.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(85, 0);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(120, 132);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 93;
+            pictureBox2.TabStop = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(211, 30);
+            label2.Name = "label2";
+            label2.Size = new Size(168, 38);
+            label2.TabIndex = 91;
+            label2.Text = "REFÚGIO";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(211, 78);
+            label3.Name = "label3";
+            label3.Size = new Size(447, 23);
+            label3.TabIndex = 92;
+            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
             // 
             // lblPagina
             // 
@@ -273,13 +305,13 @@
             dtpDataResgate.CalendarTitleForeColor = SystemColors.ButtonShadow;
             dtpDataResgate.CustomFormat = "dd/MM/yyyy";
             dtpDataResgate.Font = new Font("Arial", 13F);
-            dtpDataResgate.Format = DateTimePickerFormat.Custom;
+            dtpDataResgate.Format = DateTimePickerFormat.Short;
             dtpDataResgate.Location = new Point(539, 538);
             dtpDataResgate.Name = "dtpDataResgate";
-            dtpDataResgate.ShowUpDown = true;
             dtpDataResgate.Size = new Size(350, 32);
             dtpDataResgate.TabIndex = 21;
             dtpDataResgate.Value = new DateTime(2026, 11, 21, 0, 0, 0, 0);
+            dtpDataResgate.ValueChanged += dtpDataResgate_ValueChanged;
             // 
             // btnCancelar
             // 
@@ -332,38 +364,6 @@
             btnAddCategoria.UseVisualStyleBackColor = false;
             btnAddCategoria.Click += btnAddCategoria_Click;
             // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(85, 0);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(120, 132);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 93;
-            pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Georgia", 19.8F, FontStyle.Italic);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(211, 30);
-            label2.Name = "label2";
-            label2.Size = new Size(168, 38);
-            label2.TabIndex = 91;
-            label2.Text = "REFÚGIO";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Georgia", 11.2F, FontStyle.Italic);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(211, 78);
-            label3.Name = "label3";
-            label3.Size = new Size(447, 23);
-            label3.TabIndex = 92;
-            label3.Text = "Sistema de Gerenciamento de Animais Resgatados";
-            // 
             // formCadastroAnimal
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -402,8 +402,8 @@
             Load += formCadastroAnimal_Load;
             pnlCabecalho.ResumeLayout(false);
             pnlCabecalho.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)numIdade).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numIdade).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

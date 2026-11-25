@@ -62,7 +62,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_alteraAnimal`(
     IN p_idade INT,
     IN p_situacao VARCHAR(100),
     IN p_local_resgate VARCHAR(100),
-    IN p_data_resgate DATETIME
+    IN p_data_resgate DATE
 )
 BEGIN
     UPDATE animais_resgatados
@@ -158,7 +158,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_insereAnimal`(
     IN p_idade INT,
     IN p_situacao VARCHAR(50),
     IN p_local_resgate VARCHAR(100),
-    IN p_data_resgate DATETIME
+    IN p_data_resgate DATE
 )
 BEGIN
     INSERT INTO animais_resgatados

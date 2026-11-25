@@ -352,10 +352,9 @@
             dtpDataResgate.CalendarForeColor = Color.DarkSeaGreen;
             dtpDataResgate.CustomFormat = "dd/MM/yyyy HH:mm";
             dtpDataResgate.Font = new Font("Arial", 12F);
-            dtpDataResgate.Format = DateTimePickerFormat.Custom;
+            dtpDataResgate.Format = DateTimePickerFormat.Short;
             dtpDataResgate.Location = new Point(548, 638);
             dtpDataResgate.Name = "dtpDataResgate";
-            dtpDataResgate.ShowUpDown = true;
             dtpDataResgate.Size = new Size(350, 30);
             dtpDataResgate.TabIndex = 24;
             // 
